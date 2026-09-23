@@ -61,19 +61,19 @@ body{
 .app{
   width:100%;
   max-width:420px;
-  min-height:100vh;
+  height:100vh;
   background:var(--bg);
   display:flex;
   flex-direction:column;
   position:relative;
+  overflow:hidden;
   box-shadow:0 0 60px rgba(26,35,50,0.08);
 }
 @media(min-width:520px){
   .app{
     margin:20px 0;
-    min-height:calc(100vh - 40px);
+    height:calc(100vh - 40px);
     border-radius:32px;
-    overflow:hidden;
     border:1px solid var(--line);
     box-shadow:0 20px 60px rgba(26,35,50,0.12);
   }
